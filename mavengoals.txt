@@ -1,0 +1,5 @@
+mvn clean - tar bort gamla byggfiler och kompilerade class filer
+mvn compile - kompilerar projektets Java kod till .class filer och placerar dom i target.
+mvn test - kör alla tester i projektet med hjälp av JUnit
+mvn javadoc:javadoc - genererar dokumentation för projekt koden på Javadoc
+mvn package - pakterar ihop det komplierade projektet i en körbar jar fil.
