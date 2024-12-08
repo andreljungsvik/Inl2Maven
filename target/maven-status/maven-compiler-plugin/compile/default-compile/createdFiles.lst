@@ -1,0 +1,11 @@
+se\yrgo\models\Loan.class
+se\yrgo\utilities\LoanStatus.class
+se\yrgo\models\BookNotFoundException.class
+se\yrgo\ui\Main.class
+se\yrgo\models\LoanNotFoundException.class
+se\yrgo\models\Customer.class
+se\yrgo\models\Material.class
+se\yrgo\models\BookCatalog.class
+se\yrgo\models\Book.class
+se\yrgo\models\LoanAlreadyExistsException.class
+se\yrgo\utilities\GenderType.class

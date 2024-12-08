@@ -17,10 +17,21 @@ public class BookCatalogTest {
 
     //G
     @Test
-    public void testAddABook() {
-        BookCatalog bc = new BookCatalog();
-        Book book1 = new Book(1, "Test", "", "", "", 0);
-        bc.addBook(book1);
+    public void testAddBook() {
+        // Given: En tom katalog och en bok att lägga till
+        BookCatalog catalog = new BookCatalog();
+        Book newBook = new Book(1, "Test Book", "", "", "", 20);
+
+        // When: Lägg till boken
+        catalog.addBook(newBook);
+
+        // Then: Kontrollera att boken finns i katalogen
+        try {
+            Book foundBook = catalog.findBook("Test Book");
+            assertEquals(newBook, foundBook, "Boken borde ha lagts till i katalogen.");
+        } catch (BookNotFoundException e) {
+            fail("Boken borde ha hittats efter att den lagts till.");
+        }
     }
 
     //G
